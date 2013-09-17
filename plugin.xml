@@ -10,7 +10,7 @@
 
 
     <js-module src="www/OCRPlugin.js" name="OCRPlugin">
-        <clobbers target="window.ocr" />
+        <clobbers target="window.OCRPlugin" />
     </js-module>
 
     <!-- ios -->
