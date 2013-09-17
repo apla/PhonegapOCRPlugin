@@ -4,3 +4,4 @@ var OCRPlugin = {
         return exec(success, fail, "com.jcesarmobile.OCRPlugin", "recogniseOCR", [resultType]);
     }
 };
+module.exports = OCRPlugin;

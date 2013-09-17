@@ -18,12 +18,13 @@
         <config-file target="config.xml" parent="/*">
             <feature name="OCRPlugin">
                 <param name="ios-package" value="com.jcesarmobile.OCRPlugin"/>
+                <param name="onload" value="true" />
             </feature>
         </config-file>
 
-        <source-file src="src/iOS/claseAuxiliar.h" target-dir="Plugins" />
+        <header-file src="src/iOS/claseAuxiliar.h" target-dir="Plugins" />
         <source-file src="src/iOS/claseAuxiliar.mm" target-dir="Plugins" />
-        <source-file src="src/iOS/OCRPlugin.h" target-dir="Plugins" />
+        <header-file src="src/iOS/OCRPlugin.h" target-dir="Plugins" />
         <source-file src="src/iOS/OCRPlugin.m" target-dir="Plugins" />
         <source-file src="dependencies" target-dir="dependencies" />
         <source-file src="tessdata" target-dir="tessdata" />
