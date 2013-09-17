@@ -12,6 +12,6 @@
 
 @property (nonatomic, copy) NSString* callbackID;
 
-- (void) recogniseOCR:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options; 
+- (void) recogniseOCR:(CDVInvokedUrlCommand*)command;
 
 @end

@@ -16,10 +16,12 @@
 
 
 
-- (void) recogniseOCR:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options { //get the callback id 
+- (void) recogniseOCR:(CDVInvokedUrlCommand*)command {
+    NSArray *arguments = command.arguments;
+    NSDictionary *options = [arguments objectAtIndex:0];
     
     NSString *url_string = [options objectForKey:@"url_imagen"];
-    self.callbackID = [arguments pop];
+    self.callbackID = command.callbackId;
 
     claseAuxiliar *cA = [[claseAuxiliar alloc]init];
     
