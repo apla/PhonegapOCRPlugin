@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.jcesarmobile.OCRPlugin"
+        version="0.1.0">
+    <name>OCRPlugin</name>
+    <description>Cordova OCR Plugin</description>
+    <license>MIT</license>
+    <keywords>cordova,ocr</keywords>
+
+
+    <js-module src="www/OCRPlugin.js" name="OCRPlugin">
+        <clobbers target="window.ocr" />
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="OCRPlugin">
+                <param name="ios-package" value="com.jcesarmobile.OCRPlugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/iOS/claseAuxiliar.h" target-dir="Plugins" />
+        <source-file src="src/iOS/claseAuxiliar.mm" target-dir="Plugins" />
+        <source-file src="src/iOS/OCRPlugin.h" target-dir="Plugins" />
+        <source-file src="src/iOS/OCRPlugin.m" target-dir="Plugins" />
+        <source-file src="dependencies" target-dir="dependencies" />
+        <source-file src="tessdata" target-dir="tessdata" />
+    </platform>
+
+</plugin>
