@@ -26,8 +26,8 @@
         <source-file src="src/iOS/claseAuxiliar.mm" target-dir="Plugins" />
         <header-file src="src/iOS/OCRPlugin.h" target-dir="Plugins" />
         <source-file src="src/iOS/OCRPlugin.m" target-dir="Plugins" />
-        <source-file src="dependencies" target-dir="dependencies" />
-        <source-file src="tessdata" target-dir="tessdata" />
+        <framework src="dependencies" target-dir="dependencies" />
+        <framework src="tessdata" target-dir="tessdata" />
     </platform>
 
 </plugin>
