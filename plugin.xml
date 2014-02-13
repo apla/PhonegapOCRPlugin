@@ -19,8 +19,8 @@
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="OCRPlugin">
-                <param name="ios-package" value="com.jcesarmobile.OCRPlugin"/>
+            <feature name="com.jcesarmobile.OCRPlugin">
+                <param name="ios-package" value="OCRPlugin"/>
                 <param name="onload" value="true" />
             </feature>
         </config-file>
