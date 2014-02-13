@@ -8,6 +8,9 @@
     <license>MIT</license>
     <keywords>cordova,ocr</keywords>
 
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
 
     <js-module src="www/OCRPlugin.js" name="OCRPlugin">
         <clobbers target="window.OCRPlugin" />
@@ -17,7 +20,7 @@
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="OCRPlugin">
-                <param name="ios-package" value="com.jcesarmobile.OCRPlugin"/>
+                <param name="ios-package" value="OCRPlugin"/>
                 <param name="onload" value="true" />
             </feature>
         </config-file>
