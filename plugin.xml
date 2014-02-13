@@ -20,7 +20,7 @@
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="OCRPlugin">
-                <param name="ios-package" value="com.jcesarmobile.OCRPlugin""/>
+                <param name="ios-package" value="com.jcesarmobile.OCRPlugin"/>
                 <param name="onload" value="true" />
             </feature>
         </config-file>
